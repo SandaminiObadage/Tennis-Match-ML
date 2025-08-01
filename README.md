@@ -19,10 +19,6 @@ An advanced machine learning and computer vision system that transforms tennis m
 - **📈 Statistical Insights**: Comprehensive match statistics and performance metrics
 - **🎬 Video Output**: Professional-grade annotated match videos with analytics overlay
 
-## 🎬 Demo
-
-*Add your output video or screenshots here*
-
 ## 🛠️ Installation
 
 ### Prerequisites
@@ -33,7 +29,7 @@ An advanced machine learning and computer vision system that transforms tennis m
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/YOUR_USERNAME/tennis-analysis-ai.git
+git clone https://github.com/SandaminiObadage/Tennis-Match-ML.git
 cd tennis-analysis-ai
 ```
 
@@ -135,8 +131,6 @@ tennis_analysis/
 
 
 
-#### Visual: Annotated Output Video Screenshot
-![Annotated Output Video](output_videos/555.jpeg)
 # Discussion
 
 ### Interpretation of the Results
