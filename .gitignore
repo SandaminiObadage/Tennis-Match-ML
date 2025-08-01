@@ -1,0 +1,78 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyTorch
+*.pth
+
+# YOLO model files
+*.pt
+yolov8x.pt
+yolo5_last.pt
+
+# Video files (large files)
+*.mp4
+*.avi
+*.mov
+*.wmv
+
+# Image files (if too large)
+*.jpg
+*.jpeg
+*.png
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environment
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+
+# Output folders
+output_videos/
+runs/
+
+# Data files
+tracker_stubs/
+*.pkl
+
+# Large datasets
+training/tennis-ball-detection-6/
