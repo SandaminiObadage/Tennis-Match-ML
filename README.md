@@ -1,9 +1,87 @@
-# Tennis Analysis Project
+# 🎾 AI-Powered Tennis Analysis System
 
-## Introduction
-The Tennis Analysis Project is an advanced machine learning and computer vision initiative designed to analyze tennis matches by extracting and interpreting key performance metrics from video footage. Leveraging state-of-the-art technologies such as YOLO (You Only Look Once) for object detection and Convolutional Neural Networks (CNNs) for keypoint extraction, this project aims to provide comprehensive insights into player movements, ball trajectories, and court dynamics.
+![Python](https://img.shields.io/badge/python-v3.8+-blue.svg)
+![PyTorch](https://img.shields.io/badge/PyTorch-red.svg)
+![YOLO](https://img.shields.io/badge/YOLO-v5%2Fv8-green.svg)
+![OpenCV](https://img.shields.io/badge/OpenCV-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
-## Methodology
+## 🚀 Overview
+
+An advanced machine learning and computer vision system that transforms tennis match videos into actionable performance insights. Using state-of-the-art YOLO object detection, custom CNN architectures, and sophisticated tracking algorithms, this project provides comprehensive analysis of player movements, ball trajectories, shot speeds, and tactical positioning.
+
+### ✨ Key Features
+
+- **🎯 Multi-Object Detection**: Real-time detection of players and tennis balls using YOLOv5/v8
+- **🏟️ Court Analysis**: Precise tennis court keypoint detection with custom ResNet-50 model  
+- **📊 Performance Analytics**: Automatic calculation of shot speeds, player velocities, and movement patterns
+- **🎮 Live Visualization**: Real-time mini-court view with tactical positioning overlay
+- **📈 Statistical Insights**: Comprehensive match statistics and performance metrics
+- **🎬 Video Output**: Professional-grade annotated match videos with analytics overlay
+
+## 🎬 Demo
+
+*Add your output video or screenshots here*
+
+## 🛠️ Installation
+
+### Prerequisites
+- Python 3.8+
+- CUDA-compatible GPU (recommended)
+
+### Quick Start
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/YOUR_USERNAME/tennis-analysis-ai.git
+cd tennis-analysis-ai
+```
+
+2. **Install dependencies**
+```bash
+pip install -r requirements.txt
+```
+
+3. **Download pre-trained models**
+- Place your YOLOv8 model as `yolov8x.pt`
+- Place your tennis ball detection model as `models/yolo5_last.pt`
+- Place your court keypoints model as `models/keypoints_model.pth`
+
+4. **Run the analysis**
+```bash
+python main.py
+```
+
+## 📁 Project Structure
+
+```
+tennis_analysis/
+├── main.py                    # Main execution script
+├── requirements.txt           # Project dependencies
+├── .gitignore                # Git ignore rules
+├── README.md                 # Project documentation
+├── trackers/                 # Object tracking modules
+│   ├── player_tracker.py     # Player detection & tracking
+│   └── ball_tracker.py       # Ball detection & tracking
+├── court_line_detector/      # Court analysis
+│   └── court_line_detector.py # Court keypoint detection
+├── mini_court/               # Visualization
+│   └── mini_court.py         # Mini court rendering
+├── utils/                    # Utility functions
+│   ├── video_utils.py        # Video I/O operations
+│   ├── bbox_utils.py         # Bounding box utilities
+│   ├── conversions.py        # Unit conversions
+│   └── player_stats_drawer_utils.py # Statistics overlay
+├── training/                 # Model training notebooks
+│   ├── tennis_ball_detector_training.ipynb
+│   └── tennis_court_keypoints_training.ipynb
+├── analysis/                 # Analysis notebooks
+├── input_videos/            # Input video files
+├── output_videos/           # Generated output videos
+└── models/                  # Trained model files
+```
+
+## 🧠 Technical Architecture
 
 ### Video Processing
 - **Tool**: OpenCV
